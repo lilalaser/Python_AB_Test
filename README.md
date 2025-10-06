@@ -51,7 +51,7 @@ The dataset contains the following columns:
 
 ## 4. Usage / Installation
 
-1. Clone the repository.  
+1. Clone the repository: https://github.com/lilalaser/Python-Data-Analysis-AB-Test
 2. Install required Python libraries (pandas, numpy)
 3. Run the Jupyter Notebook for analysis.
 
