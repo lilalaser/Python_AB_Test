@@ -2,11 +2,11 @@
 
 ## 1. Overview
 
-This project analyzes the effectiveness of online advertisements in increasing customer purchases on a company's website. The analysis is based on a dataset obtained from an A/B testing experiment, where **20,000 customers** were subjected to either an **advertisement (`ad`)** or a **public service announcement (`psa`)**.  
+This project analyzes the effectiveness of online advertisements in increasing customer purchases on a company's website. The analysis is based on a dataset obtained from an A/B testing experiment, where 20,000 customers were subjected to either an advertisement (`ad`) or a public service announcement (`psa`).  
 
 The goals of this analysis are to determine:  
 - If exposure to advertisements leads to more purchases compared to PSAs.  
-- Whether **ad exposure frequency** or the **time of day** has an impact on purchase behavior.  
+- Whether ad exposure frequency or the time of day has an impact on purchase behavior.  
 
 ---
 
