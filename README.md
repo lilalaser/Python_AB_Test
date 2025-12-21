@@ -2,12 +2,21 @@
 
 ## 1. Overview
 
-This project analyzes the effectiveness of online advertisements in increasing customer purchases on a company's website. The analysis is based on a dataset obtained from an A/B testing experiment, where 20,000 customers were subjected to either an advertisement (`ad`) or a public service announcement (`psa`).  
+Online advertising plays a key role in driving customer engagement and revenue, but its effectiveness depends not only on whether ads are shown, but also on how often and when they are displayed.
 
-The goals of this analysis are to determine:  
-- If exposure to advertisements leads to more purchases compared to PSAs.  
-- Whether ad exposure frequency or the time of day has an impact on purchase behavior.  
+This project analyzes the impact of online advertisements on purchase behavior using data from an A/B test with 20,000 users. Customers were shown either an advertisement (Ad) or a public service announcement (PSA) over a 31-day period, allowing for a direct comparison of their effects.
 
+The analysis focuses on four main questions:
+
+Are users exposed to ads more likely to make a purchase than those exposed to PSAs?
+
+How does ad exposure frequency relate to purchase behavior?
+
+Do purchase rates vary by the time of peak ad exposure?
+
+Do ads and PSAs differ in how purchase behavior changes with increased exposure?
+
+The goal is to provide a clear, data-driven evaluation of advertising effectiveness and to extract practical insights into how ad exposure influences customer purchasing behavior.
 ---
 
 ## 2. Dataset
@@ -19,12 +28,12 @@ The dataset used for this analysis is available on Kaggle:
 ### 2.2 Dataset Structure
 The dataset contains the following columns:  
 
-- **customerID**: Unique identifier for each customer.  
-- **test_group**: `'ad'` (advertisement) or `'psa'` (public service announcement).  
-- **made_purchase**: Boolean indicating whether the customer made a purchase after viewing the advertisement.  
-- **days_with_most_ads**: The day of the month the customer saw the most ads.  
-- **peak_ad_hours**: The hour of the day when the customer saw the most ads.  
-- **ad_count**: Total number of ads shown to the customer.  
+- customerID: Unique identifier for each customer.  
+- test_group: `'ad'` (advertisement) or `'psa'` (public service announcement).  
+- made_purchase: Boolean indicating whether the customer made a purchase after viewing the advertisement.  
+- days_with_most_ads: The day of the month the customer saw the most ads.  
+- peak_ad_hours: The hour of the day when the customer saw the most ads.  
+- ad_count: Total number of ads shown to the customer.  
 
 ---
 
@@ -35,23 +44,32 @@ The dataset contains the following columns:
 - Jupyter Notebook  
 
 ### 3.2 Structure of the Analysis
-- Data Preprocessing  
-- Grouping and Aggregating Data  
-- Ad Exposure Analysis  
-- Comparing Ad and PSA Groups  
-- Analyzing Peak Ad Hours  
-- Time of Day Analysis  
-- Combining Time and Ad Exposure  
+1. Introduction
+2. Data Source
+3. Data Preparation
+4. Data Analysis
+   4.1 Analysis of Ad Exposure at Group Level (Ad vs. PSA)
+   4.2 Analysis of Ad Exposure at Individual Ad Level
+   4.3 Ad Exposure at Peak Ad Hours Level
+   4.4 Purchase Rates by Exposure Level: Ads vs. PSA
+5. Conclusion and Outlook
+
 
 ### 3.3 Key Findings
-- Exposure to ads led to a higher purchase rate compared to exposure to PSAs.  
-- The time of day and frequency of ad exposure played significant roles in purchase behavior.  
+- Users exposed to advertisements were significantly more likely to make a purchase than users exposed to public service announcements (PSAs). The ad group’s purchase rate was more than twice as high, and this difference was statistically significant.
 
+- Increasing ad exposure was associated with a small increase in purchase likelihood, but only up to a moderate level. Beyond this point, additional exposure did not consistently lead to higher purchase rates.
+
+- PSA exposure showed little to no effect on purchasing behavior, regardless of how often users were exposed.
+
+- Purchase rates varied substantially across early hours of the day due to small sample sizes, while later hours showed more stable and reliable patterns. Time-of-day effects should therefore be interpreted with caution.
+
+Overall, the analysis indicates that advertising is effective in increasing purchases compared to PSAs, but simply increasing the number of ad impressions provides limited additional benefit beyond moderate exposure levels.
 ---
 
 ## 4. Usage / Installation
 
-1. Clone the repository: https://github.com/lilalaser/Python-Data-Analysis-AB-Test
+1. Clone the repository.  
 2. Install required Python libraries (pandas, numpy)
 3. Run the Jupyter Notebook for analysis.
 
