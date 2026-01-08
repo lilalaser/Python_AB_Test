@@ -16,8 +16,9 @@ Do purchase rates vary by the time of peak ad exposure?
 
 Do ads and PSAs differ in how purchase behavior changes with increased exposure?
 
-**The goal is to provide a clear evaluation of advertising effectiveness and to extract practical insights into how ad exposure influences purchasing behavior.
-**---
+The goal is to provide a clear evaluation of advertising effectiveness and to extract practical insights into how ad exposure influences purchasing behavior.
+
+---
 
 ## 2. Dataset
 
