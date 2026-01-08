@@ -66,6 +66,8 @@ The dataset contains the following columns:
 - Purchase rates varied substantially across early hours of the day due to small sample sizes, while later hours showed more stable and reliable patterns. Time-of-day effects should therefore be interpreted with caution.
 
 Overall, the analysis indicates that advertising is effective in increasing purchases compared to PSAs, but simply increasing the number of ad impressions provides limited additional benefit beyond moderate exposure levels.
+
+
 ---
 
 ## 4. Usage / Installation
